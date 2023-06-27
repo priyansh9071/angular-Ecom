@@ -1,0 +1,17 @@
+.footer{
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    /* background-color: blue; */
+}
+.foot-field ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: blueviolet;
+    padding-left: 0;
+}
+.foot-msg{
+    text-align: center;
+    color: black;
+}

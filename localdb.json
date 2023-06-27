@@ -1,0 +1,165 @@
+{
+  "seller": [
+    {
+      "name": "priyansh",
+      "email": "priyansh@gmail.com",
+      "password": 111111,
+      "id": 1
+    },
+    {
+      "name": "PRIYANSH",
+      "email": "priyansh9071@gmail.com",
+      "password": "fsfgsfg",
+      "id": 2
+    },
+    {
+      "name": "PRIYANSH",
+      "email": "priyansh907@gmail.com",
+      "password": "sdjLKASHDLJK",
+      "id": 3
+    },
+    {
+      "name": "PRIYANSH",
+      "email": "priyansh9072@gmail.com",
+      "password": "ghdfghdfg",
+      "id": 4
+    },
+    {
+      "name": "AMUL",
+      "email": "amul@gmail.com",
+      "password": "000000",
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "name": "IPHONE14 PRO",
+      "price": "105000",
+      "color": "Purple",
+      "category": "Electronics",
+      "description": "The iPhone 14 Pro and iPhone 14 Pro Max are smartphones designed, developed, and marketed by Apple Inc. They are the sixteenth-generation flagship iPhones, succeeding the iPhone 13 Pro and iPhone 13 Pro Max. The devices were unveiled alongside the iPhone 14 and iPhone 14 Plus during the Apple Event at Apple Park in Cupertino, California, on September 7, 2022.[7][8] Pre-orders for the iPhone 14 Pro and 14 Pro Max began on September 9, 2022, and were made available on September 16, 2022.",
+      "url": "https://wallpapers.com/images/high/widget-pictures-duok4vl5bp2gew3h.webp",
+      "id": 1
+    },
+    {
+      "name": "Realme Narzo 30",
+      "price": "25000",
+      "color": "White",
+      "category": "Electronics",
+      "description": "realme narzo 30 (Racing Silver, 4GB RAM, 64GB Storage) - MediaTek Helio G95 processor I Full HD+ display with No Cost EMI/Additional Exchange Offers",
+      "url": "https://wallpapers.com/images/high/realme-logo-magma-f65bmgzch89mtgcq.webp",
+      "id": 2
+    },
+    {
+      "name": "HPLAPTOP",
+      "price": "50000",
+      "color": "PINK",
+      "category": "Electronics",
+      "description": "HP NoteBook is a Windows 10 laptop with a 15.60-inch display that has a resolution of 1366x768 pixels. It is powered by a Core i5 processor and it comes with 8GB of RAM. The HP NoteBook packs 256GB of SSD storage.",
+      "url": "https://wallpapers.com/images/hd/dark-open-laptop-front-a3el9rjglnuemj8x.webp",
+      "id": 3
+    },
+    {
+      "name": "NIKE",
+      "price": "1500",
+      "color": "White-Black",
+      "category": "Shoes",
+      "description": "From running and basketball to training and casual styles, Nike men's shoes are designed with the latest Nike innovations like Flyknit, Zoom and Air to keep you secure and comfortable no matter your sport. Shop men’s shoes by style, technology or sport, and check out new releases for all the latest.",
+      "url": "https://th.bing.com/th/id/OIP.lo76BM0GT_zmeAllzERJ3gHaEo?w=289&h=180&c=7&r=0&o=5&pid=1.7",
+      "id": 4
+    },
+    {
+      "name": "beatXP",
+      "price": "1799",
+      "color": "Black",
+      "category": "Watch",
+      "description": "beatXP Vega Neo 1.43” AMOLED Bluetooth Calling Smartwatch with 466 * 466 Pixel, 60 Hz Refresh Rate, 500 Nits, Always on Display, Health Tracking, 100+ Sports Modes (Black Strap, 1.43)",
+      "url": "https://m.media-amazon.com/images/I/71lYSEETh5L._SL1500_.jpg",
+      "id": 5
+    },
+    {
+      "name": "Levi's Jeans",
+      "price": "1499",
+      "color": "Blue",
+      "category": "Jeans",
+      "description": "Bavarian immigrant Levi Strauss founded the West Coast wing of his brother’s dry goods business in San Francisco in 1853. 20 years later a tailor, Jacob Davis, reached out to Strauss about rivets he fastened to pants to reinforce their pockets.",
+      "url": "https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/276d9359-6b39-4eae-a2ee-8734ab663cdd._CR0,0,1200,628_SX430_QL70_.jpg",
+      "id": 6
+    },
+    {
+      "name": "Bottle",
+      "price": "499",
+      "color": "Blue",
+      "category": "Water Bottle",
+      "description": "Temperature Water Bottle Smart Vacuum Insulated Thermos Bottle with LED Temperature",
+      "url": "https://m.media-amazon.com/images/I/51vzTAMlX2L._SX522_.jpg",
+      "id": 7
+    },
+    {
+      "name": "Jacket",
+      "price": "999",
+      "color": "Black",
+      "category": "Clothes",
+      "description": "SKENJEL Men Solid Denim Jacket",
+      "url": "https://m.media-amazon.com/images/I/410gUR0GT9L._UY741_.jpg",
+      "id": 8
+    }
+  ],
+  "Users": [
+    {
+      "name": "KAUSHAL",
+      "email": "kaushal@gmail.com",
+      "password": "000000",
+      "id": 1
+    },
+    {
+      "name": "VATSAL",
+      "email": "vatsal@gmail.com",
+      "password": "000000",
+      "id": 2
+    },
+    {
+      "name": "PRIYANSH",
+      "email": "priyansh@gmail.com",
+      "password": "111111",
+      "id": 3
+    },
+    {
+      "name": "AMUL",
+      "email": "amul@gmail.com",
+      "password": "000000",
+      "id": 4
+    },
+    {
+      "name": "SUBWAY",
+      "email": "subWay@gamail.com",
+      "password": "000000",
+      "id": 7
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "fname": "",
+      "lname": "",
+      "address": "",
+      "email": "",
+      "phone": "",
+      "additionalInfo": "",
+      "totalPrice": 105100,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "fname": "",
+      "lname": "",
+      "address": "",
+      "email": "",
+      "phone": "",
+      "additionalInfo": "",
+      "totalPrice": 105100,
+      "userId": 3,
+      "id": 2
+    }
+  ]
+}

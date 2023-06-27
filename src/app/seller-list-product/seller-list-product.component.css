@@ -1,0 +1,10 @@
+img {
+    height: 100px;
+}
+
+table td,
+table th {
+    border: 1px solid blueviolet;
+    padding: 10px;
+    min-height: 160px;
+}

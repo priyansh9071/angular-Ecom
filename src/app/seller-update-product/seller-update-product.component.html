@@ -1,0 +1,31 @@
+
+<div class="container">
+    <form *ngIf="editProductData" [formGroup]="editProductData" (ngSubmit)="editedData()" >
+        <div class="form-group mt-3">
+            <input type="email" class="form-control" formControlName="name"   placeholder="Enter Product Name">
+        </div>
+    
+        <div class="form-group mt-3">
+            <input type="email" class="form-control" formControlName="price"  placeholder="Enter Product Price">
+        </div>
+    
+        <div class="form-group mt-3">
+            <input type="email" class="form-control" formControlName="color"  placeholder="Enter Product Color">
+        </div>
+    
+        <div class="form-group mt-3">
+            <input type="email" class="form-control" formControlName="category"  placeholder="Enter Product Category">
+        </div>
+    
+        <div class="form-group mt-3">
+            <textarea class="form-control" formControlName="description" rows="3" placeholder="Enter Product Description"></textarea>
+        </div>
+    
+        <div class="form-group mt-3">
+            <input type="email" class="form-control" formControlName="url"  placeholder="Enter Product image Url">
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-2">Edit Product</button>
+        <div *ngIf="editProductMsg" class="alert alert-info mt-2"><strong>Success!</strong>Your product has been edited successfully. You will be redirected in List Page in 3 sec.</div>
+    </form>
+</div>

@@ -1,0 +1,33 @@
+<h4 class="mt-4">Product List</h4>
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Image</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Color</th>
+        <th scope="col">Category</th>
+        <th scope="col">Description</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of productList">
+        <td>{{item.id}}</td>
+        <td><img src="{{item.url}}"/></td>
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.color}}</td>
+        <td>{{item.category}}</td>
+        <td>{{item.description}}</td>
+        <td>
+          <a routerLink="/seller-update-product/{{item.id}}"> <i class="fa fa-edit" style="font-size:20px;color:blueviolet"></i></a> 
+        </td>
+        <td>
+            <i (click)="deleteProduct(item.id)" class="fa fa-trash" style="font-size:20px;color:blueviolet"></i>
+        </td>
+      </tr>
+    </tbody>
+  </table>

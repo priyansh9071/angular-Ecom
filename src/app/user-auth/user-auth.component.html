@@ -1,0 +1,49 @@
+<form [formGroup]="userSignUpForm" (ngSubmit)="SubmitSignUp()" *ngIf="!isLogin">
+    <div class="form-group mt-2">
+        <label for="exampleInputEmail1">Name</label>
+        <input type="text" class="form-control" formControlName="name" placeholder="Enter name">
+        <span class="help-block" *ngIf="userSignUpForm.get('name').touched" >
+            <span *ngIf="userSignUpForm.get('name').errors?.required">name is required</span>
+        </span>
+    </div>
+    <div class="form-group mt-2">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
+        <span class="help-block" *ngIf="!userSignUpForm.get('email').valid && userSignUpForm.get('email').touched">
+            <span *ngIf="userSignUpForm.get('email').errors?.required">email is required</span>
+        </span>
+        <span *ngIf="alertText">email is already registered</span>
+    </div>
+    <div class="form-group mt-2">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" formControlName="password" placeholder="Enter Password">
+        <span class="help-block" *ngIf="userSignUpForm.get('password').touched">
+            <span *ngIf="userSignUpForm.get('password').errors?.required">password is required</span>
+        </span>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2" [disabled]="!userSignUpForm.valid">Signup</button>
+    <div class="help-block mt-2"><span>Already have an account?</span><a (click)="openLogin()">&nbsp;<u>Click Here To Login</u></a></div>
+</form>
+
+
+
+<!-- LOGIN FORM -->
+<form [formGroup]="userLoginForm" (ngSubmit)="SubmitLogin()" *ngIf="isLogin">
+    <div class="form-group mt-2">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
+        <span class="help-block" *ngIf="!userLoginForm.get('email').valid && userLoginForm.get('email').touched">
+            <span *ngIf="userLoginForm.get('email').errors?.required">email is required</span>
+        </span>
+    </div>
+    <div class="form-group mt-2">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" formControlName="password" placeholder="Enter Password">
+        <span class="help-block" *ngIf="userLoginForm.get('password').touched">
+            <span *ngIf="userLoginForm.get('password').errors?.required">password is required</span>
+        </span>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2" [disabled]="!userLoginForm.valid">Login</button>
+    <div><span *ngIf="isLoginError" class="help-block">Invalid Credentials</span></div>
+    <div class="help-block mt-2"><span>Don't have an account?</span><a (click)="openSignUp()">&nbsp;<u>Click Here To SignUp</u></a></div>
+</form>

@@ -1,0 +1,89 @@
+<div class="row">
+    <div class="col-md-8 mb-4 mt-4">
+        <div class="card mb-4">
+            <div class="card-header py-3">
+                <h5 class="mb-0">Biling details</h5>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="addOrderForm"  (ngSubmit)="SubmitOrder()">
+                 
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="form-control"/>
+                                <label class="form-label" ngDefaultControl formControlName="fname">First name</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" class="form-control" />
+                                <label class="form-label" ngDefaultControl formControlName="lname">Last name</label>
+                            </div>
+                        </div>
+                    </div>
+
+                 
+                    <div class="form-outline mb-4">
+                        <input type="text" class="form-control" />
+                        <label class="form-label" ngDefaultControl formControlName="address">Address</label>
+                    </div>
+
+               
+                    <div class="form-outline mb-4">
+                        <input type="email" class="form-control" />
+                        <label class="form-label" ngDefaultControl formControlName="email">Email</label>
+                    </div>
+
+                 
+                    <div class="form-outline mb-4">
+                        <input type="number" class="form-control" />
+                        <label class="form-label" ngDefaultControl formControlName="phone">Phone</label>
+                    </div>
+
+           
+                    <div class="form-outline mb-4">
+                        <textarea class="form-control" rows="3"></textarea>
+                        <label class="form-label" ngDefaultControl formControlName="additionalInfo">Additional information</label>
+                    </div>
+                    <div class="col text-center">
+                        <button type="submit" class="btn btn-primary">
+                            Make purchase
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4 mt-4">
+        <div class="card mb-4">
+            <div class="card-header py-3">
+                <h5 class="mb-0">Summary</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                        Products
+                        <span>{{totalProduct}}</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        Total Amount
+                        <span>{{totalPrice}}</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                        <div>
+                            <strong>Payment Option</strong>
+                        </div>
+                        <span><strong>Pay On Delivery</strong></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  
+    </div>
+
+    <div class="alert alert-success" role="alert" *ngIf="submitOrderMessage">
+        Your Product Has been Ordered Successfully!
+      </div>
+</div>
+
